@@ -1,0 +1,6 @@
+{
+  "name": "AVANZA GROUP Portfolio",
+  "description": "Premium corporate portfolio for AVANZA GROUP, a collective of specialist companies delivering branding, technology, digital marketing, advertising, and financial compliance services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
