@@ -12,7 +12,7 @@ const steps = [
 
 export default function Journey() {
   return (
-    <section className="py-32 bg-avanza-bg relative overflow-hidden">
+    <section className="py-32 bg-avenza-bg relative overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
         
         <div className="mb-20 text-center">
@@ -29,9 +29,9 @@ export default function Journey() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-avanza-gray-light/60 max-w-2xl mx-auto"
+            className="text-xl text-avenza-gray-light/60 max-w-2xl mx-auto"
           >
-            How businesses scale seamlessly within the AVANZA ecosystem.
+            How businesses scale seamlessly within the AVENZA ecosystem.
           </motion.p>
         </div>
 
@@ -48,12 +48,12 @@ export default function Journey() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               className="flex flex-row md:flex-col items-center md:items-start text-left mb-8 md:mb-0 relative z-10 w-full md:w-1/5 group"
             >
-              <div className="flex-shrink-0 w-24 h-24 rounded-full bg-avanza-surface border border-white/10 flex items-center justify-center text-2xl font-bold text-white mb-0 md:mb-6 mr-6 md:mr-0 group-hover:bg-avanza-green group-hover:text-avanza-bg group-hover:border-avanza-green transition-all duration-300">
+              <div className="flex-shrink-0 w-24 h-24 rounded-full bg-avenza-surface border border-white/10 flex items-center justify-center text-2xl font-bold text-white mb-0 md:mb-6 mr-6 md:mr-0 group-hover:bg-avenza-green group-hover:text-avenza-bg group-hover:border-avenza-green transition-all duration-300">
                 {step.id}
               </div>
               <div>
                 <h4 className="text-2xl font-bold text-white mb-2">{step.title}</h4>
-                <p className="text-sm text-avanza-gray-light/60 max-w-[200px]">{step.desc}</p>
+                <p className="text-sm text-avenza-gray-light/60 max-w-[200px]">{step.desc}</p>
               </div>
 
               {/* Connecting Line (Mobile) */}

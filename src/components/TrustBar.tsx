@@ -11,7 +11,7 @@ const stats = [
 
 export default function TrustBar() {
   return (
-    <section className="py-20 border-y border-avanza-surface-light bg-avanza-bg">
+    <section className="py-20 border-y border-avenza-surface-light bg-avenza-bg">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="flex flex-wrap justify-center md:justify-between items-center gap-12 md:gap-6">
           {stats.map((stat, index) => (
@@ -26,7 +26,7 @@ export default function TrustBar() {
               <h3 className="text-4xl md:text-5xl font-bold text-white mb-2 font-display">
                 {stat.value}
               </h3>
-              <p className="text-sm md:text-base text-avanza-gray-light/60 uppercase tracking-widest font-medium">
+              <p className="text-sm md:text-base text-avenza-gray-light/60 uppercase tracking-widest font-medium">
                 {stat.label}
               </p>
             </motion.div>

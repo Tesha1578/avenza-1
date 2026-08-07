@@ -9,7 +9,7 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="pt-32 min-h-screen bg-avanza-bg">
+    <div className="pt-32 min-h-screen bg-avenza-bg">
       <About />
       <Journey />
       <Team />

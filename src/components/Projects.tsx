@@ -31,7 +31,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-32 bg-avanza-bg">
+    <section id="projects" className="py-32 bg-avenza-bg">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div>
@@ -49,7 +49,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <button className="h-14 px-8 rounded-full bg-white text-avanza-bg font-semibold flex items-center gap-2 hover:bg-avanza-green transition-all duration-300">
+            <button className="h-14 px-8 rounded-full bg-white text-avenza-bg font-semibold flex items-center gap-2 hover:bg-avenza-green transition-all duration-300">
               View All Work
               <ArrowRight size={20} />
             </button>
@@ -78,8 +78,8 @@ export default function Projects() {
                 </div>
               </div>
               <div>
-                <p className="text-avanza-green font-medium mb-3 tracking-wide">{project.category}</p>
-                <h3 className="text-3xl font-bold text-white group-hover:text-avanza-gray-light transition-colors">{project.title}</h3>
+                <p className="text-avenza-green font-medium mb-3 tracking-wide">{project.category}</p>
+                <h3 className="text-3xl font-bold text-white group-hover:text-avenza-gray-light transition-colors">{project.title}</h3>
               </div>
             </motion.div>
           ))}

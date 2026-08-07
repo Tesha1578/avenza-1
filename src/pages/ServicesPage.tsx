@@ -8,7 +8,7 @@ export default function ServicesPage() {
   }, []);
 
   return (
-    <div className="pt-32 min-h-screen bg-avanza-bg">
+    <div className="pt-32 min-h-screen bg-avenza-bg">
       <Services />
       <Process />
     </div>

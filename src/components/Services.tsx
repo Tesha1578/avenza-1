@@ -31,7 +31,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-32 bg-white text-avanza-text rounded-[40px] md:rounded-[80px] -mt-10 relative z-20 overflow-hidden">
+    <section id="services" className="py-32 bg-white text-avenza-text rounded-[40px] md:rounded-[80px] -mt-10 relative z-20 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="text-center mb-24">
           <motion.h2 
@@ -47,7 +47,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-avanza-text-light max-w-2xl mx-auto"
+            className="text-xl text-avenza-text-light max-w-2xl mx-auto"
           >
             Comprehensive services tailored to drive your business forward.
           </motion.p>
@@ -66,7 +66,7 @@ export default function Services() {
                 className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-12 items-center`}
               >
                 <div className="flex-1 w-full relative group">
-                  <div className="overflow-hidden rounded-[32px] aspect-[4/3] bg-avanza-gray-light">
+                  <div className="overflow-hidden rounded-[32px] aspect-[4/3] bg-avenza-gray-light">
                     <img 
                       src={service.image} 
                       alt={service.pillar} 
@@ -81,7 +81,7 @@ export default function Services() {
                     {service.items.map((item, i) => (
                       <span 
                         key={i} 
-                        className="px-6 py-3 rounded-full border border-gray-200 text-sm font-medium text-avanza-text-light hover:border-avanza-bg hover:text-avanza-bg transition-colors cursor-default"
+                        className="px-6 py-3 rounded-full border border-gray-200 text-sm font-medium text-avenza-text-light hover:border-avenza-bg hover:text-avenza-bg transition-colors cursor-default"
                       >
                         {item}
                       </span>

@@ -12,7 +12,7 @@ const processes = [
 
 export default function Process() {
   return (
-    <section className="py-32 bg-white text-avanza-text rounded-[40px] md:rounded-[80px] -mt-10 relative z-20 overflow-hidden">
+    <section className="py-32 bg-white text-avenza-text rounded-[40px] md:rounded-[80px] -mt-10 relative z-20 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16">
           
@@ -30,7 +30,7 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-xl text-avanza-text-light max-w-md"
+              className="text-xl text-avenza-text-light max-w-md"
             >
               A proven methodology combining creativity with data-driven execution to ensure predictable success.
             </motion.p>
@@ -44,12 +44,12 @@ export default function Process() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group flex items-center gap-8 p-6 rounded-[24px] hover:bg-avanza-gray-light transition-colors"
+                className="group flex items-center gap-8 p-6 rounded-[24px] hover:bg-avenza-gray-light transition-colors"
               >
-                <div className="text-2xl font-display font-bold text-avanza-text-light/30 group-hover:text-avanza-bg transition-colors">
+                <div className="text-2xl font-display font-bold text-avenza-text-light/30 group-hover:text-avenza-bg transition-colors">
                   0{index + 1}
                 </div>
-                <div className="text-3xl font-bold text-avanza-text group-hover:translate-x-4 transition-transform duration-300">
+                <div className="text-3xl font-bold text-avenza-text group-hover:translate-x-4 transition-transform duration-300">
                   {proc}
                 </div>
               </motion.div>

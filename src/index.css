@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-avanza-bg: #0D0D0D;
-  --color-avanza-surface: #161616;
-  --color-avanza-surface-light: #2A2A2A;
-  --color-avanza-white: #FFFFFF;
-  --color-avanza-gray-light: #F5F5F5;
-  --color-avanza-green: #A6FF3D;
-  --color-avanza-text: #111111;
-  --color-avanza-text-light: #4A4A4A;
+  --color-avenza-bg: #0D0D0D;
+  --color-avenza-surface: #161616;
+  --color-avenza-surface-light: #2A2A2A;
+  --color-avenza-white: #FFFFFF;
+  --color-avenza-gray-light: #F5F5F5;
+  --color-avenza-green: #A6FF3D;
+  --color-avenza-text: #111111;
+  --color-avenza-text-light: #4A4A4A;
 
   --font-sans: 'Plus Jakarta Sans', sans-serif;
   --font-display: 'Syne', sans-serif;
@@ -18,7 +18,7 @@
 
 @layer base {
   body {
-    @apply bg-avanza-bg text-avanza-gray-light font-sans antialiased overflow-x-hidden selection:bg-avanza-green selection:text-avanza-bg;
+    @apply bg-avenza-bg text-avenza-gray-light font-sans antialiased overflow-x-hidden selection:bg-avenza-green selection:text-avenza-bg;
   }
   
   h1, h2, h3, h4, h5, h6 {

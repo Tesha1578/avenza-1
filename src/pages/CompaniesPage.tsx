@@ -7,7 +7,7 @@ export default function CompaniesPage() {
   }, []);
 
   return (
-    <div className="pt-32 min-h-screen bg-avanza-bg">
+    <div className="pt-32 min-h-screen bg-avenza-bg">
       <Companies />
     </div>
   );

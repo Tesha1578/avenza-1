@@ -39,12 +39,12 @@ export default function Navbar() {
         <div
           className={cn(
             'flex items-center justify-between rounded-full px-6 py-4 md:px-8 transition-all duration-500',
-            scrolled ? 'bg-avanza-surface/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
+            scrolled ? 'bg-avenza-surface/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
           )}
         >
           {/* Logo */}
           <Link to="/" className="text-2xl font-bold font-display tracking-tight text-white z-50" onClick={() => setMobileMenuOpen(false)}>
-            AVANZA<span className="text-avanza-green">.</span>
+            AVENZA<span className="text-avenza-green">.</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -53,7 +53,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.href}
-                className="text-sm font-medium text-avanza-gray-light/80 hover:text-avanza-green transition-colors"
+                className="text-sm font-medium text-avenza-gray-light/80 hover:text-avenza-green transition-colors"
               >
                 {link.name}
               </Link>
@@ -78,7 +78,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="absolute top-0 left-0 right-0 h-screen bg-avanza-bg pt-32 px-6 md:hidden flex flex-col items-center gap-8"
+            className="absolute top-0 left-0 right-0 h-screen bg-avenza-bg pt-32 px-6 md:hidden flex flex-col items-center gap-8"
           >
             {navLinks.map((link, i) => (
               <motion.div
@@ -90,7 +90,7 @@ export default function Navbar() {
                 <Link
                   to={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-3xl font-display font-medium text-white hover:text-avanza-green block"
+                  className="text-3xl font-display font-medium text-white hover:text-avenza-green block"
                 >
                   {link.name}
                 </Link>

@@ -17,7 +17,7 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <Router>
-      <div className="relative w-full bg-avanza-bg text-avanza-gray-light min-h-screen">
+      <div className="relative w-full bg-avenza-bg text-avenza-gray-light min-h-screen">
         <Navbar />
         <main>
           <Routes>

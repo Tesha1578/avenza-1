@@ -8,7 +8,7 @@ export default function ProjectsPage() {
   }, []);
 
   return (
-    <div className="pt-32 min-h-screen bg-avanza-bg">
+    <div className="pt-32 min-h-screen bg-avenza-bg">
       <Projects />
       <Testimonials />
     </div>
