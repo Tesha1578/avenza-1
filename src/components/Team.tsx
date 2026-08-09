@@ -19,8 +19,6 @@ const team = [
     name: 'A M TESHA',
     title: 'CEO',
     role: '',
-    title: 'Founder',
-    role: '',
     image: photo4,
   },
   {
