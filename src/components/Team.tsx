@@ -12,13 +12,13 @@ const team = [
   {
     name: 'Venu Mukesh',
     title: 'Founder',
-    role: 'Founder, Upgrade and Mental & Health Foundation',
+    role: '',
     image: venuMukeshPhoto,
   },
   {
     name: 'A M TESHA',
     title: 'Founder',
-    role: 'Founder, Axoweb Technologies',
+    role: '',
     image: photo4,
   },
   {
