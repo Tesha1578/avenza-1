@@ -6,13 +6,13 @@ import photo1 from '../../assets/5th-1.jpeg';
 import photo2 from '../../assets/5th.jpeg';
 import photo3 from '../../assets/3rd.jpeg';
 import photo4 from '../../assets/axoweb_ceo.jpeg';
-import photo5 from '../../assets/1st.jpeg';
+import venuMukeshPhoto from '../../assets/venu-mukesh.png';
 
 const team = [
   {
-    name: 'Thomas Astle',
-    role: 'Founder, Upgrade',
-    image: photo5,
+    name: 'Venu Mukesh',
+    role: 'Founder of ( Upgrade ) and ( Mental & Health Foundation )',
+    image: venuMukeshPhoto,
   },
   {
     name: 'A M TESHA',
@@ -20,7 +20,7 @@ const team = [
     image: photo4,
   },
   {
-    name: 'VENU',
+    name: 'Thomas Astle',
     role: 'Head of Marketing, Thomas Astle',
     image: photo3,
   },
