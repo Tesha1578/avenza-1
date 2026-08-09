@@ -11,12 +11,14 @@ import venuMukeshPhoto from '../../assets/venu-mukesh.png';
 const team = [
   {
     name: 'Venu Mukesh',
+    title: 'Founder',
     role: 'Founder of ( Upgrade ) and ( Mental & Health Foundation )',
     image: venuMukeshPhoto,
   },
   {
     name: 'A M TESHA',
-    role: 'CEO, Axoweb Technologies',
+    title: 'Founder',
+    role: 'Founder',
     image: photo4,
   },
   {
@@ -74,6 +76,9 @@ export default function Team() {
                 />
               </div>
 
+              {member.title && (
+                <p className="text-sm text-avenza-green mb-1">{member.title}</p>
+              )}
               <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
               {member.role && (
                 <p className="text-sm text-avenza-green mb-6 h-10">{member.role}</p>
