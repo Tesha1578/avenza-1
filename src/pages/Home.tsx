@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import TrustBar from '../components/TrustBar';
 import About from '../components/About';
+import Companies from '../components/Companies';
 import Influencers from '../components/Influencers';
 import Services from '../components/Services';
 import Journey from '../components/Journey';
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <About />
+      <Companies />
       <Influencers />
       <Services />
       <Journey />

@@ -43,28 +43,6 @@ export default function About() {
           </motion.div>
 
         </div>
-
-        {/* Infographic visualization of the 5 companies forming AVENZA */}
-        <motion.div 
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-24 p-8 md:p-16 bg-avenza-gray-light rounded-[40px] flex flex-col md:flex-row items-center justify-between gap-12"
-        >
-           <div className="text-center md:text-left flex-1">
-             <h3 className="text-[32px] font-bold mb-4">The AVENZA Collective</h3>
-             <p className="text-avenza-text-light">Five distinct pillars supporting one common goal: Your success.</p>
-           </div>
-           
-           <div className="flex-1 w-full grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {['Branding', 'Technology', 'Marketing', 'Advertising', 'Finance'].map((pillar, i) => (
-                <div key={i} className="aspect-square bg-white rounded-3xl flex items-center justify-center p-4 text-center shadow-sm font-semibold">
-                  {pillar}
-                </div>
-              ))}
-           </div>
-        </motion.div>
       </div>
     </section>
   );
