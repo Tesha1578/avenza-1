@@ -9,6 +9,8 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import CompaniesPage from './pages/CompaniesPage';
+import CompanyDetailPage from './pages/CompanyDetailPage';
+import InfluencersPage from './pages/InfluencersPage';
 import ServicesPage from './pages/ServicesPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
@@ -24,6 +26,8 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/companies" element={<CompaniesPage />} />
+            <Route path="/companies/:slug" element={<CompanyDetailPage />} />
+            <Route path="/influencers" element={<InfluencersPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<ContactPage />} />
@@ -34,4 +38,3 @@ export default function App() {
     </Router>
   );
 }
-

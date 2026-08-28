@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { Sparkles, Code2, Megaphone, Target, Landmark, ArrowUpRight } from 'lucide-react';
 
 const companies = [
   {
+    slug: 'upgrade',
     name: 'Upgrade',
     category: 'Branding & Experiential',
     description: 'Brand Activations, Corporate Events, MICE, Roadshows, Mall Campaigns, LED Promotions.',
@@ -13,6 +15,7 @@ const companies = [
     rowSpan: 'lg:row-span-1',
   },
   {
+    slug: 'axoweb-technologies',
     name: 'Axoweb Technologies',
     category: 'Technology',
     description: 'Software, AI, Apps, Websites, UI/UX, Cloud, Automation.',
@@ -22,6 +25,7 @@ const companies = [
     rowSpan: 'lg:row-span-1',
   },
   {
+    slug: 'thomas-astle',
     name: 'Thomas Astle',
     category: 'Digital Marketing',
     description: 'Content Strategy, Social Media, Creative Campaigns, Influencer Marketing, Video Editing.',
@@ -31,6 +35,7 @@ const companies = [
     rowSpan: 'lg:row-span-1',
   },
   {
+    slug: 'acton-creations',
     name: 'Acton Creations',
     category: 'Advertising',
     description: 'Performance Marketing, SEO, Paid Ads, Brand Growth, Campaign Management.',
@@ -40,6 +45,7 @@ const companies = [
     rowSpan: 'lg:row-span-1',
   },
   {
+    slug: 'tsp-and-co',
     name: 'TSP & CO.',
     category: 'Tax & Compliance',
     description: 'GST, Income Tax, Business Registration, Financial Advisory.',
@@ -71,7 +77,7 @@ export default function Companies() {
             transition={{ delay: 0.1 }}
             className="text-xl text-avenza-gray-light/60 max-w-2xl"
           >
-            Five specialist divisions working in synergy to provide end-to-end solutions for your business.
+            Five specialist divisions working in synergy to provide end-to-end solutions for your business. Click any division to explore its dedicated page.
           </motion.p>
         </div>
 
@@ -80,34 +86,39 @@ export default function Companies() {
             const Icon = company.icon;
             return (
               <motion.div
-                key={index}
+                key={company.slug}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`${company.colSpan} ${company.rowSpan} ${company.color} rounded-[32px] p-8 md:p-12 relative group overflow-hidden border border-white/5 hover:border-avenza-green/30 transition-all duration-500`}
+                className={`${company.colSpan} ${company.rowSpan}`}
               >
-                {/* Glow effect on hover */}
-                <div className="absolute inset-0 bg-avenza-green/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[32px]"></div>
-                
-                <div className="flex flex-col h-full relative z-10">
-                  <div className="flex justify-between items-start mb-12">
-                    <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center text-avenza-green group-hover:scale-110 group-hover:bg-avenza-green group-hover:text-avenza-bg transition-all duration-500">
-                      <Icon size={32} />
-                    </div>
-                    <button className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-avenza-bg transition-all duration-300">
-                      <ArrowUpRight size={24} />
-                    </button>
-                  </div>
+                <Link
+                  to={`/companies/${company.slug}`}
+                  className={`${company.color} rounded-[32px] p-8 md:p-12 relative group block overflow-hidden border border-white/5 hover:border-avenza-green/30 transition-all duration-500 h-full`}
+                >
+                  {/* Glow effect on hover */}
+                  <div className="absolute inset-0 bg-avenza-green/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[32px]" />
                   
-                  <div className="mt-auto">
-                    <p className="text-avenza-green font-medium mb-2">{company.category}</p>
-                    <h3 className="text-3xl font-bold text-white mb-4">{company.name}</h3>
-                    <p className="text-avenza-gray-light/60">{company.description}</p>
+                  <div className="flex flex-col h-full relative z-10">
+                    <div className="flex justify-between items-start mb-12">
+                      <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center text-avenza-green group-hover:scale-110 group-hover:bg-avenza-green group-hover:text-avenza-bg transition-all duration-500">
+                        <Icon size={32} />
+                      </div>
+                      <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-avenza-bg transition-all duration-300">
+                        <ArrowUpRight size={24} />
+                      </div>
+                    </div>
+                    
+                    <div className="mt-auto">
+                      <p className="text-avenza-green font-medium mb-2">{company.category}</p>
+                      <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-avenza-green transition-colors">{company.name}</h3>
+                      <p className="text-avenza-gray-light/60">{company.description}</p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </motion.div>
-            )
+            );
           })}
         </div>
 
