@@ -1,3 +1,12 @@
+import diVyasaravananPhoto from '../../assets/di_vyasaravanan.png';
+import riyaThiyagarajanPhoto from '../../assets/riya_thiyagarajan.png';
+import dhivyaDuraisamyPhoto from '../../assets/dhivya_duraisamy.png';
+import iconicveroPhoto from '../../assets/iconicvero.png';
+import sarangiShyamPhoto from '../../assets/sarangi_shyam.png';
+import magiModelPhoto from '../../assets/magi_model.png';
+import thamizhselviPhoto from '../../assets/thamizhselvi.png';
+import ishwaryaIshupandaPhoto from '../../assets/ishwarya_ishupanda.png';
+
 export interface Influencer {
   id: string;
   name: string;
@@ -16,7 +25,7 @@ export const influencers: Influencer[] = [
     instagramUrl: 'https://www.instagram.com/di.vyasaravanan',
     category: 'Fashion & Lifestyle',
     bio: 'Fashion, aesthetic lifestyle content & brand collaborations.',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop',
+    image: diVyasaravananPhoto,
   },
   {
     id: 'dhivya-duraisamy',
@@ -25,7 +34,7 @@ export const influencers: Influencer[] = [
     instagramUrl: 'https://www.instagram.com/dhivya__duraisamy',
     category: 'Acting & Media',
     bio: 'Actor, news presenter & popular media personality.',
-    image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop',
+    image: dhivyaDuraisamyPhoto,
   },
   {
     id: 'riya-thiyagarajan',
@@ -34,7 +43,7 @@ export const influencers: Influencer[] = [
     instagramUrl: 'https://www.instagram.com/riya_thiyagarajan',
     category: 'Fashion & Lifestyle',
     bio: 'Lifestyle, travel & contemporary fashion creator.',
-    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop',
+    image: riyaThiyagarajanPhoto,
   },
   {
     id: 'iconicvero',
@@ -43,7 +52,7 @@ export const influencers: Influencer[] = [
     instagramUrl: 'https://www.instagram.com/_iconicvero_',
     category: 'Modeling',
     bio: 'High fashion model, runway artist & style influencer.',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop',
+    image: iconicveroPhoto,
   },
   {
     id: 'sarangi-shyam',
@@ -52,7 +61,7 @@ export const influencers: Influencer[] = [
     instagramUrl: 'https://www.instagram.com/sarangi.shyam',
     category: 'Fashion & Lifestyle',
     bio: 'Beauty enthusiast, ethnic wear & lifestyle curator.',
-    image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=800&auto=format&fit=crop',
+    image: sarangiShyamPhoto,
   },
   {
     id: 'magi-model',
@@ -61,7 +70,7 @@ export const influencers: Influencer[] = [
     instagramUrl: 'https://www.instagram.com/magi.model',
     category: 'Modeling',
     bio: 'Professional model, commercial campaigns & brand face.',
-    image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=800&auto=format&fit=crop',
+    image: magiModelPhoto,
   },
   {
     id: 'i-hiroshini',
@@ -79,7 +88,7 @@ export const influencers: Influencer[] = [
     instagramUrl: 'https://www.instagram.com/thamizhselvi_',
     category: 'Digital Creator',
     bio: 'Digital creator, ethnic lifestyle & brand promotions.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop',
+    image: thamizhselviPhoto,
   },
   {
     id: 'ishwarya-ishupanda',
@@ -88,7 +97,7 @@ export const influencers: Influencer[] = [
     instagramUrl: 'https://www.instagram.com/ishwarya_ishupanda',
     category: 'Digital Creator',
     bio: 'Entertainment, comedic storytelling & lifestyle creator.',
-    image: 'https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=800&auto=format&fit=crop',
+    image: ishwaryaIshupandaPhoto,
   },
   {
     id: 'sahasraofficially',
