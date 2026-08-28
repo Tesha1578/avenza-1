@@ -6,8 +6,6 @@ import Companies from '../components/Companies';
 import Influencers from '../components/Influencers';
 import Services from '../components/Services';
 import Journey from '../components/Journey';
-import Projects from '../components/Projects';
-import Process from '../components/Process';
 import Team from '../components/Team';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
@@ -22,8 +20,6 @@ export default function Home() {
       <Influencers />
       <Services />
       <Journey />
-      <Projects />
-      <Process />
       <Team />
       <Testimonials />
       <Contact />
