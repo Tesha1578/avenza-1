@@ -33,10 +33,10 @@ export default function CompanyDetailPage() {
   const otherCompanies = Object.values(companiesData).filter((c) => c.slug !== company.slug);
 
   return (
-    <div className="pt-32 min-h-screen bg-avenza-bg text-avenza-gray-light">
+    <div className="pt-20 sm:pt-22 min-h-screen bg-avenza-bg text-avenza-gray-light">
       
       {/* Top Navigation & Breadcrumb */}
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 mb-8">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 mb-4 sm:mb-5">
         <button
           onClick={() => navigate(-1)}
           className="inline-flex items-center gap-2 text-sm font-medium text-avenza-gray-light/70 hover:text-avenza-green transition-colors"
@@ -53,18 +53,23 @@ export default function CompanyDetailPage() {
             
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-12 relative z-10">
               <div>
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-avenza-green text-xs font-semibold uppercase tracking-wider mb-6">
-                  <Building2 size={14} />
-                  <span>{company.category}</span>
+                <div className="flex flex-wrap items-center gap-2 mb-6">
+                  <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-avenza-green/10 text-avenza-green text-xs font-bold border border-avenza-green/20">
+                    <Building2 size={13} />
+                    <span>{company.subsidiaryName}</span>
+                  </span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-white/90 text-xs font-semibold uppercase tracking-wider">
+                    {company.category}
+                  </span>
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">{company.name}</h1>
-                <p className="text-xl text-white/80 max-w-2xl font-light leading-relaxed">
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 font-display">{company.name}</h1>
+                <p className="text-base sm:text-xl text-white/80 max-w-2xl font-light leading-relaxed">
                   {company.tagline}
                 </p>
               </div>
 
-              <div className="w-24 h-24 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-avenza-green flex-shrink-0">
-                <Icon size={48} />
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-avenza-green flex-shrink-0">
+                <Icon size={40} />
               </div>
             </div>
 

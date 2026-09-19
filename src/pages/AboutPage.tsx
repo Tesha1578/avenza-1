@@ -9,8 +9,8 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="pt-32 min-h-screen bg-avenza-bg">
-      <About />
+    <div className="pt-20 sm:pt-22 min-h-screen bg-avenza-bg">
+      <About className="pt-2 sm:pt-4" />
       <Journey />
       <Team />
     </div>

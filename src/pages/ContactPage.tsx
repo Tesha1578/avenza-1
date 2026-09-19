@@ -7,8 +7,8 @@ export default function ContactPage() {
   }, []);
 
   return (
-    <div className="pt-32 min-h-screen bg-avenza-bg">
-      <Contact />
+    <div className="pt-20 sm:pt-22 min-h-screen bg-avenza-bg">
+      <Contact className="pt-2 sm:pt-4" />
     </div>
   );
 }
